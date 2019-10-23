@@ -3,33 +3,27 @@ import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
-  selector: 'app-list',
-  templateUrl: 'list.page.html',
-  styleUrls: ['list.page.scss']
+  selector: 'app-empresa1',
+  templateUrl: './empresa1.page.html',
+  styleUrls: ['./empresa1.page.scss'],
 })
-
-export class ListPage implements OnInit {
+export class Empresa1Page implements OnInit {
 
 
   constructor(private route: ActivatedRoute) {
     this.route.queryParams.subscribe(params => {
     
     });
-    console.log('List: ionViewWillEnter');
+    console.log('Empresa1: ionViewWillEnter');
   }
   
   ionViewWillEnter(){
     this.route.queryParams.subscribe(params => {
       
     });
-    console.log('List: ionViewWillEnter!');
+    console.log('Empresa1: ionViewWillEnter!');
   }
   
   ngOnInit() {
   }
-
-
 }
-
-
-

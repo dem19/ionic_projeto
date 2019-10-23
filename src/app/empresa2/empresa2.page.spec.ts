@@ -1,23 +1,22 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
 
-import { ListPage } from './list.page';
+import { Empresa2Page } from './empresa2.page';
 
-describe('ListPage', () => {
-  let component: ListPage;
-  let fixture: ComponentFixture<ListPage>;
+describe('Empresa2Page', () => {
+  let component: Empresa2Page;
+  let fixture: ComponentFixture<Empresa2Page>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListPage ],
-      imports: [IonicModule.forRoot()]
-
+      declarations: [ Empresa2Page ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListPage);
+    fixture = TestBed.createComponent(Empresa2Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -25,5 +24,4 @@ describe('ListPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
 });
