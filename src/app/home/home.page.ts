@@ -12,7 +12,7 @@ export class HomePage {
 
   constructor(private router: Router,) { }
 
-    irParaEmpresa1(){
+  irParaEmpresa1(){
     this.router.navigate(['empresa1']);
     let extras: NavigationExtras = {
     };
@@ -30,6 +30,11 @@ export class HomePage {
     };
     this.router.navigate(['/empresa3'], extras)
   }
-
+  irParaCadastro(){
+    this.router.navigate(['cadastro']);
+    let extras: NavigationExtras = {
+    };
+    this.router.navigate(['/cadastro'], extras)
+  }
 
 };

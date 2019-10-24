@@ -1,33 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Pagina inicial
-    </ion-title>
+      <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Pagina inicial</ion-title>
   </ion-toolbar>
 </ion-header>
 <p></p>
 <ion-searchbar placeholder="Buscar"></ion-searchbar>
       
+<!-- <ion-content >
+    <ion-list>
+      <icon-item (click)="irParaEmpresa1()"><ion-label>Empresa Santos</ion-label>
+      </icon-item>
+    </ion-list> -->
+
   
 <ion-content >
   <div padding>
 <ion-button size="large" type="submit" (click)="irParaEmpresa1()" >
-    Empresa1
+    Empresa Santos
 </ion-button>
 
 <ion-button size="large" type="submit" (click)="irParaEmpresa2()" >
-  Empresa2
+    Empresa Vieira
 </ion-button>
 
 <ion-button size="large" type="submit" (click)="irParaEmpresa3()" >
-  Empresa3
+  Empresa Moura
 </ion-button>
 </div>
-
-
-
+ 
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+<ion-fab-button>
+    <ion-icon name="add"(click)="irParaCadastro()" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+  
 
 </ion-content>
